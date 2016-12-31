@@ -8,13 +8,13 @@ __version__ = "0.2.0"
 
 
 import sys
-from .stuff import Stuff
+from .toolbox import Base
 
 
 def main():
     print("Executing py2nb version %s." % __version__)
     print("List of argument strings: %s" % sys.argv[1:])
-    print("Stuff and Boo():\n%s\n%s" % (Stuff, Boo()))
+    print("Base and Extention():\n%s\n%s" % (Base, Extention()))
 
-class Boo(Stuff):
+class Extention(Base):
     pass
